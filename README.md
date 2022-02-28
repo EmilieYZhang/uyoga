@@ -1,5 +1,5 @@
 ## UYOGA
-# Authors: Emilie Zhang and Alvia Naqvi
+#### Authors: Emilie Zhang and Alvia Naqvi
 VTHACKS IX Hackathon
 
 ## Inspiration
