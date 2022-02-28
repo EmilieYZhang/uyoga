@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload</title>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="../static/upload.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UYOGA Workout</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ 
+</head>
+<body>
+    <header>
+        <img class="logo" src="../static/logo.png" alt ="logo">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="friends.html"> Friends </a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="upload.html"><button>Workout</button></a>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section id="slogan">
+        <div class="banner">
+            <div class="left-col">
+                <h1> Upload Your</h1>
+                <h1> Workout!</h1>
+                <h3> Upload an image of a yoga pose.
+                </h3>
+                <h3>If it is a valid yoga pose, </h3>
+                <h3>you can share your workout with friends!</h3>
+                <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+                <input id="file-picker" type="file" class="upload-box" name="file" accept="image/*" multiple>
+                <br>
+                <input type="submit" value="Upload!" id="upload-button">
+                </form>
+            </div>
+            <div class="right-col">
+                <img src="../static/uploadchar.png" alt="yoga img">
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+
+    $("#file-picker").change(function(){
+
+        var input = document.getElementById('file-picker');
+
+        for (var i=0; i<input.files.length; i++)
+        {
+        //koala.jpg, koala.JPG substring(index) lastIndexOf('a') koala.1.jpg
+            var ext= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
+
+            if ((ext == 'jpg') || (ext == 'png'))
+            {
+                $("#msg").text("Files are supported")
+            }
+            else
+            {
+                $("#msg").text("Files are NOT supported")
+                document.getElementById("file-picker").value ="";
+            }
+
+        }
+
+
+    } );
+
+</script>
+</html>

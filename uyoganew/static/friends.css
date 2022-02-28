@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+li, a, button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 13%;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #98c1d9;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    margin-left: 60px;
+    padding: 9px 25px;
+    background-color: #98C1D9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: antiquewhite;
+}
+
+#slogan {
+    position: relative;
+}
+
+#slogan h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: black;
+    padding: 0px 13%;
+    background-color: transparent;
+}
+
+#slogan .cta {
+    margin-left: 13%;
+    margin-top: 50px;
+    display: inline-block;
+    color: white;
+    padding: 15px 40px;
+    background-color: #EE6C4D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#slogan .cta:hover {
+    background-color: antiquewhite;
+}
+
+.banner {
+    display: flex;
+}
+
+.left-col, .right-col {
+    flex-basis:50%;
+}
+
+.left-col{
+    margin-left: 13%;
+}
+
+.right-col{
+    margin-right: 12%;
+}
+
+.right-col img{
+    width: 75%;
+}
+
+.form {
+    margin-left: 30%;
+    max-width: 500px;
+    padding: 100px;
+}
+
+input, textarea {
+    display: inline-block;
+    width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 3px;
+    resize: none;
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+    background: white;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+input[type="text"]:focus, textarea:focus{
+    border-bottom: 1px solid blue;
+}

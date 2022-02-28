@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../static/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UYOGA</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../static/logo.png" alt ="logo">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#"> Home </a></li>
+                <li><a href="friends.html"> Friends </a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="/"><button>Workout</button></a>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section id="slogan">
+        <div class="banner">
+            <div class="left-col">
+                <h1> Connecting to</h1>
+                <h1> Yourself and</h1> 
+                <h1> Others</h1>
+                <a href="#bottom_learn" type="button" class="cta" > Learn More </a>
+            </div>
+            <div class="right-col">
+                <img src="../static/indexcharacter.png" alt="yoga img">
+            </div>
+        </div>
+        <div class = "spacerVertical">
+
+        </div>
+    </section>
+    <section id="bottom_learn">
+        <div class="banner">
+            <div class="left-col-about">
+                <h2>About UYOGA</h2>
+            </div>
+            <div class="right-col-about">
+                <h3>Start a workout with UYOGA, complete a session. 
+                Then share your session with your family and friends!
+                </h3>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="left-col-more">
+                <h4>UYOGA's unique yoga pose identifier</h4>
+            </div>
+            <div class="right-col-more">
+                <h5>Worried about the accuracy of your yoga poses?
+                    Try sending a picture in the Workout section to see
+                    if our machine can recognize it! </h5>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    </script>
+</body>
+</html>
