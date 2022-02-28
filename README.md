@@ -2,7 +2,7 @@
 We initially wanted to experiment with machine learning and see how we can implement it in our everyday life. At the same time, the themes of collaboration, health and wellness interested us a lot. In the end, we thought of the perfect idea that could inspire thousands of people, UYOGA.
 
 
-###UYOGA
+### UYOGA
 UYOGA, a humble place where you can connect to yourself and to others. You can decide if you want to start a Yoga chain of wellness or continue one that had been started by your friends. After a productive yoga session, you can upload a picture of one of your yoga poses as the proof of your workout. If UYOGA validates your yoga pose with proper form, then you can unlock a unique code to continue your chain of wellness. Simply navigate to the friends tab, enter the unique code from the workout you just completed, enter your friend's contact information and UYOGA will send them an invite to continue the chain! From there, your friend can visit UYOGA to start their workout then invite more friends to continue. Doing yoga has never been as fun and collaborative. UYOGA unites the community and brings people together in a unique way. All of this without the hassle of creating an account!
 
 ## What it does
