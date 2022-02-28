@@ -1,3 +1,7 @@
+## UYOGA
+## Authors: Emilie Zhang and Alvia Naqvi
+## VTHACKS IX Hackathon
+
 ## Inspiration
 We initially wanted to experiment with machine learning and see how we can implement it in our everyday life. At the same time, the themes of collaboration, health and wellness interested us a lot. In the end, we thought of the perfect idea that could inspire thousands of people, UYOGA.
 
